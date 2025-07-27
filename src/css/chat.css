@@ -1,6 +1,8 @@
 .box {
-  padding: 20px;
-  background: #f0eaea;
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  z-index: 100;
   /* height: 475px;
   width: 375px; */
 }
@@ -22,7 +24,7 @@
    display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 15px;          
+  padding: 10px 15px;           /* thoda padding */
   border: 1px solid #ddd;     
   background-color: #fff;
 }
@@ -48,14 +50,16 @@
   flex-direction: column;
 }
 
+/* UPDATED: poore row ke charo taraf border */
 .row {
   display: flex;
   align-items: flex-start;
   padding: 12px;
   position: relative;
   border: 1px solid #ddd;
-  border-top: none;   
- 
+  border-top: none;    /* poora border */
+  /* border-radius: 6px;        thoda rounded corners */
+  /* margin-bottom: 10px;       rows ke beech gap */
 }
 
 
@@ -64,7 +68,7 @@
   height: 36px;
   border-radius: 50%;
   margin-right: 10px;
- 
+  /* no border or padding here */
 }
 
 .info {
@@ -76,6 +80,7 @@
   font-size: 14px;
   margin: 0;
   color: #333;
+  /* no border here */
 }
 
 .text {

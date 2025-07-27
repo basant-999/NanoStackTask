@@ -1,11 +1,11 @@
 import React from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
-import "../css/Notimassage.css"
-const NotificationPanel = () => {
+import "../css/notimassage.css"
+const NotificationPanel = ({status}) => {
   return (
     <>
-      <div className="box">
-        <p className="note">Notifications</p>
+      <div className="box" style={{display:status?"block":'none'}}>
+        <p className="note"></p>
 
         <div className="card">
           <div className="top">
@@ -14,6 +14,7 @@ const NotificationPanel = () => {
           </div>
 
           <div className="rows">
+            
             <div className="row">
               <img src="onlyprofile.png" alt="user" className="img" />
               <div className="info">
@@ -26,6 +27,7 @@ const NotificationPanel = () => {
               <AiOutlineClose className="icon" />
             </div>
 
+           
             <div className="row">
               <div className="icon-img-wrapper">
                 <img src="calander.png" alt="calendar" className="icon-img" />
@@ -41,6 +43,7 @@ const NotificationPanel = () => {
               <AiOutlineClose className="icon" />
             </div>
 
+            
             <div className="row">
               <div className="icon-img-wrapper">
                 <img src="calander.png" alt="calendar" className="icon-img" />
@@ -56,7 +59,7 @@ const NotificationPanel = () => {
               <AiOutlineClose className="icon" />
             </div>
 
-            {/* Task Assigned */}
+   
             <div className="row">
               <img src="onlyprofile.png" alt="user" className="img" />
               <div className="info">

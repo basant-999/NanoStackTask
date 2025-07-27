@@ -35,7 +35,7 @@ const Data = [
   },
   {
     dateTime: "03 May, 2025 at 4pm",
-    status: "Yet-to-be-Scheduled",
+    status: "Follow Up",
     type: "Online",
     buyerName: "Protein Chips",
     brand: "Protein",

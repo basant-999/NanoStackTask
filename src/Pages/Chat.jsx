@@ -2,10 +2,10 @@ import React from 'react';
 import '../css/chat.css';
 import { AiOutlineClose } from 'react-icons/ai';
 
-const Chat = () => {
+const Chat = ({status}) => {
   return (
-    <div className="box">
-      <p className="note">Notifications</p>
+    <div className="box" style={{display:status?"block":"none"}}>
+      <p className="note"></p>
 
       <div className="card">
         <div className="top">
