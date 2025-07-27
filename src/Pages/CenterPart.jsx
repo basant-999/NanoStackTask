@@ -4,7 +4,6 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 import "../css/centerpart.css"
 import BuyerMeetingList from "./ByreMettinglist";
-// import BuyerMeeting from "../pages/BuyerMeeting";
 const PageHader=({status})=>{
     return(
         <>

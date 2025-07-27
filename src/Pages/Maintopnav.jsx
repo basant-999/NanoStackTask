@@ -7,6 +7,7 @@ import PageHader from "./CenterPart";
 import Chat from "./Chat";
 import NotificationPanel from "./NotiMassage";
 import Account from "./Profile";
+import { HiMiniMagnifyingGlass } from "react-icons/hi2";
 const MainTopnav=()=>{
     const [SideBarActive ,setSideBarActive] = useState(false)
     const [profile ,setProfile] = useState(false);
@@ -18,8 +19,13 @@ const MainTopnav=()=>{
                 <SideNavbar activeCheck = {SideBarActive}/>
                 <div id={SideBarActive ? "NavBarMAinDivActive" : "NavBarMAinDiv"}>
                     <div style={{display:"flex",justifyContent:"center",gap:"40px",alignItems:"center"}}>
+        
+                        <div style={{display:"flex",justifyContent:"center",gap:"40px",alignItems:"center"}}>
                         <div onClick={()=>setSideBarActive(!SideBarActive)} ><RxHamburgerMenu id="Hamburger" /></div>
-                        <div><input type="text" id="SearchIcon" placeholder="Search anything here"/></div>
+                        <div style={{display:"flex",justifyContent:"center",alignItems:"center",color:"rgba(167, 167, 167, 1)"}}><input type="text" id="SearchIcon" placeholder="Search anything here...."/>
+                        <span id="SearchIconeGlass"><HiMiniMagnifyingGlass style={{color:"rgba(122, 122, 122, 1)"}}/></span>
+                        </div>
+                    </div>
                     </div>
                     <div style={{display:"flex",gap:"20px"}}>
                         <div  onClick={()=>{setChat(!chat)}} ><img src="/massage.png" alt="" /><Chat status={chat}/></div>

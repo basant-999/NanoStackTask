@@ -14,13 +14,13 @@ const Sidevar=({activeCheck})=>{
                 <div id="sideDivMenu">
                     <div className="sideMenuDIV">
                         <div>
-                            <img src="/home.png" className="sideDivMenuImg" alt="" />Dashboard
+                            <img src="dashboard.png" className="sideDivMenuImg" alt="" />Dashboard
                         </div>
                     </div>
 
                     <div className="sideMenuDIV">
                         <div>
-                            <img src="/task-square.png" className="sideDivMenuImg" alt="" />Tasks
+                            <img src="task.png" className="sideDivMenuImg" alt="" />Tasks
                         </div>
                     </div>
 
@@ -50,7 +50,7 @@ const Sidevar=({activeCheck})=>{
 
                     <div className="sideMenuDIV">
                         <div>
-                            <img src="Requisition.png" className="sideDivMenuImg" alt="" />Requisitions
+                            <img src="relation.png" className="sideDivMenuImg" alt="" />Requisitions
                         </div>
                     </div>
 
