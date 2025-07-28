@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
-import "../css/notimassage.css"
+import "../css/Notimassage.css"
 const NotificationPanel = ({status}) => {
   return (
     <>
